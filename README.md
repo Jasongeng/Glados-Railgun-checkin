@@ -11,6 +11,16 @@
 ### **Fork**本仓库
 
 ![图片加载失败](imgs/1.png)
+## 获取cookie
+- 登录 GLaDOS 的当前签到页面。
+- F12 → Network。
+- 清空 Network 请求。
+- 点击一次网页上的“签到”按钮，不要只刷新网页。
+- 找到 /api/user/checkin 请求。
+- 点进去看 Request Headers → Cookie。
+- 复制这个请求完整的 Cookie 值。
+- 更新 GitHub → Settings → Secrets and variables → Actions → GLADOS_COOKIES。
+- Actions 手动 Run workflow。
 
 ### 添加**secret**
 
